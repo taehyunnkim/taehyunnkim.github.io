@@ -354,6 +354,7 @@ nav {
 
 #project-timeline {
     margin-bottom: 100px;
+    opacity: 0;
 }
 
 .timeline {
@@ -459,6 +460,18 @@ nav {
 
     &::after {
         left: -$bullet-size/2;
+    }
+}
+
+@for $i from 1 through 10 {
+    @if $i%2 == 0 {
+        #card#{$i} {
+            opacity: 0;
+        }
+    } @else {
+        #card#{$i} {
+            opacity: 0;
+        }
     }
 }
 

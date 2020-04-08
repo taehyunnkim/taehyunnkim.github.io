@@ -430,6 +430,7 @@ nav span {
 
 #project-timeline {
   margin-bottom: 100px;
+  opacity: 0;
 }
 
 .timeline {
@@ -541,6 +542,46 @@ nav span {
 
 .right::after {
   left: -7px;
+}
+
+#card1 {
+  opacity: 0;
+}
+
+#card2 {
+  opacity: 0;
+}
+
+#card3 {
+  opacity: 0;
+}
+
+#card4 {
+  opacity: 0;
+}
+
+#card5 {
+  opacity: 0;
+}
+
+#card6 {
+  opacity: 0;
+}
+
+#card7 {
+  opacity: 0;
+}
+
+#card8 {
+  opacity: 0;
+}
+
+#card9 {
+  opacity: 0;
+}
+
+#card10 {
+  opacity: 0;
 }
 
 @media all and (max-width: 1024px) {
