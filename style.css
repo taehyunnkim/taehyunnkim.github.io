@@ -585,6 +585,11 @@ nav span {
 }
 
 @media all and (max-width: 1024px) {
+  #home {
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: fill-available;
+  }
   button {
     width: 240px;
     height: 80px;
@@ -599,9 +604,6 @@ nav span {
   #introduction p {
     font-size: 1.5em;
     line-height: 2em;
-  }
-  header {
-    margin-top: 0;
   }
 }
 

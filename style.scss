@@ -477,6 +477,10 @@ nav {
 
 @media all and (max-width: 1024px) {
 
+    #home {
+        height: fill-available;
+    }
+
     button {
         width: 240px;
         height: 80px;
@@ -488,7 +492,6 @@ nav {
     }
 
     #introduction {
-
         h1 {
             font-size: 7em;
         }
@@ -497,10 +500,6 @@ nav {
             font-size: 1.5em;
             line-height: 2em;
         }
-    }
-
-    header {
-        margin-top: 0;
     }
 }
 
