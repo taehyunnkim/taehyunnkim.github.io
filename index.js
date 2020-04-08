@@ -86,7 +86,7 @@ window.onload = () => {
             card8.style.opacity = 1;
         }
 
-        if(window.scrollY > 2400) { 
+        if(window.scrollY > 2500) { 
             card7.style.opacity = 1;
         }
 
@@ -98,19 +98,19 @@ window.onload = () => {
             card5.style.opacity = 1;
         }
 
-        if(window.scrollY > 3400) { 
+        if(window.scrollY > 3500) { 
             card4.style.opacity = 1;
         }
 
-        if(window.scrollY > 3600) { 
+        if(window.scrollY > 3700) { 
             card3.style.opacity = 1;
         }
 
-        if(window.scrollY > 3700) { 
+        if(window.scrollY > 3900) { 
             card2.style.opacity = 1;
         }
 
-        if(window.scrollY > 3800) { 
+        if(window.scrollY > 4100) { 
             card1.style.opacity = 1;
         }
 
