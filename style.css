@@ -94,6 +94,7 @@ button:hover::after {
 }
 
 #home {
+  border: 1px solid black;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,6 +217,7 @@ nav span {
   margin-top: auto;
   height: 10%;
   width: 100%;
+  border: 1px solid black;
 }
 
 #bottom span {
@@ -594,7 +596,7 @@ nav span {
     width: 90vw;
   }
   #introduction {
-    width: 90%;
+    width: 100%;
   }
   #introduction h1 {
     font-size: 7em;

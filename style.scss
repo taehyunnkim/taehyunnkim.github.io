@@ -92,6 +92,7 @@ button {
 }
 
 #home {
+    border: 1px solid black;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -192,6 +193,7 @@ nav {
     margin-top: auto;
     height: 10%;
     width: 100%;
+    border: 1px solid black;
 
     span {
         font-size: 14px;
@@ -476,8 +478,6 @@ nav {
 }
 
 @media all and (max-width: 1024px) {
-    $line-height-mb: 120px;
-    $line-height-abs-mb: -120px;
 
     button {
         width: 240px;
@@ -490,7 +490,7 @@ nav {
     }
 
     #introduction {
-        width: 90%;
+        width: 100%;
 
         h1 {
             font-size: 7em;
