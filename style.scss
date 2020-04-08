@@ -43,7 +43,11 @@ h2 {
 }
 
 .transition2 {
-    transition: all 1.5s cubic-bezier(.23, 1, .32, 1);
+    transition: all 1s cubic-bezier(.23, 1, .32, 1);
+}
+
+.transition3 {
+    transition: all 1.5s ease-in-out;
 }
 
 button {
@@ -71,7 +75,7 @@ button {
 }
 
 .container {
-    width: 1000px;
+    width: 60vw;
     margin: 0 auto;
 }
 
@@ -182,6 +186,11 @@ nav {
     }
 }
 
+#hand {
+    display: inline-block;
+    animation: wave 10s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+}
+
 $line-height: 60px;
 $line-height-abs: -60px;
 
@@ -221,6 +230,24 @@ $line-height-abs: -60px;
     }
 }
 
+@keyframes wave {
+    50%{
+        transform: rotate(0);
+    }
+    51% {
+        transform: rotate(-10deg);
+    }
+    52% {
+        transform: rotate(0deg);
+    }
+    53% {
+        transform: rotate(10deg);
+    }
+    54% {
+        transform: rotate(0deg);
+    }
+}
+
 #featured {
     height: 100vh;
     display: flex;
@@ -233,6 +260,8 @@ $line-height-abs: -60px;
     padding: 50px 10px;
     position: relative;
     margin: 10px;
+    opacity: 0;
+    transition: margin 2s cubic-bezier(.23, 1, .32, 1), opacity 3s cubic-bezier(.23, 1, .32, 1);
     
     p {
         margin-top: -10px;
@@ -268,6 +297,10 @@ $line-height-abs: -60px;
     margin: -30px 0 30px 0;
 }
 
+#feature-header {
+    opacity: 0;
+}
+
 #vocaby {
     width: 200px;
     height: 200px;
@@ -275,6 +308,10 @@ $line-height-abs: -60px;
     background-image: url("assets/projects/vocaby_logo_large.png");
     z-index: -100;
     filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.3));
+}
+
+#vocabyCard {
+    margin-right: 200px;
 }
 
 #refugee {
@@ -285,6 +322,11 @@ $line-height-abs: -60px;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3);
 }
 
+#refugeeCard {
+    margin-left: 200px;
+}
+
+
 #earth {
     width: 400px;
     height: 400px;
@@ -292,3 +334,13 @@ $line-height-abs: -60px;
     z-index: -100;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3);
 }
+
+#earthCard {
+    margin-right: 200px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+      width: 80vw;
+    }   
+  }

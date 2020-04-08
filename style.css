@@ -45,8 +45,13 @@ h2 {
 }
 
 .transition2 {
-  -webkit-transition: all 1.5s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.transition3 {
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 button {
@@ -75,7 +80,7 @@ button:hover span {
 }
 
 .container {
-  width: 1000px;
+  width: 60vw;
   margin: 0 auto;
 }
 
@@ -208,6 +213,12 @@ nav span {
   font-size: 14px;
 }
 
+#hand {
+  display: inline-block;
+  -webkit-animation: wave 10s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+          animation: wave 10s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+}
+
 .scroll-indicator {
   position: absolute;
   left: 0;
@@ -257,6 +268,52 @@ nav span {
   }
 }
 
+@-webkit-keyframes wave {
+  50% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  51% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  52% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  53% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  54% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes wave {
+  50% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  51% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  52% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  53% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  54% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 #featured {
   height: 100vh;
   display: -webkit-box;
@@ -276,6 +333,9 @@ nav span {
   padding: 50px 10px;
   position: relative;
   margin: 10px;
+  opacity: 0;
+  -webkit-transition: margin 2s cubic-bezier(0.23, 1, 0.32, 1), opacity 3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: margin 2s cubic-bezier(0.23, 1, 0.32, 1), opacity 3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .projectCard p {
@@ -311,6 +371,10 @@ nav span {
   margin: -30px 0 30px 0;
 }
 
+#feature-header {
+  opacity: 0;
+}
+
 #vocaby {
   width: 200px;
   height: 200px;
@@ -319,6 +383,10 @@ nav span {
   z-index: -100;
   -webkit-filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.3));
           filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.3));
+}
+
+#vocabyCard {
+  margin-right: 200px;
 }
 
 #refugee {
@@ -330,6 +398,10 @@ nav span {
           box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
+#refugeeCard {
+  margin-left: 200px;
+}
+
 #earth {
   width: 400px;
   height: 400px;
@@ -337,5 +409,15 @@ nav span {
   z-index: -100;
   -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+#earthCard {
+  margin-right: 200px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 80vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

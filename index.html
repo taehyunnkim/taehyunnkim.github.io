@@ -47,16 +47,16 @@
                 </header>
                 <section id="introduction">
                     <div>
-                        <h1>Hi, I'm Eric 👋</h1>
+                        <h1>Hi, I'm Eric <span id="hand">👋</span></h1>
                         <p>
                             I’m a <span id="role">full stack developer</span> with passion for web technologies
                             <br>Based in Seattle, I am currently studying Informatics
                             <br>at the <span id="school">University of Washington</span>
                         </p>
-                        <button>ABOUT ME <span class="transition">&#10230;</span></button>
+                        <button>ABOUT ME <span class="transition">&#8594;</span></button>
                     </div>
                 </section>
-                <section id="bottom">
+                <section id="bottom" class="transition">
                     <span>PROJECTS</span>
                     <div class="scroll-indicator"> 
                         <div class="scroll">
@@ -68,23 +68,25 @@
         </div>
         <div class="container">
             <section id="featured">
-                <h2 class="section-header">FEATURED PROJECTS</h2>
-                <div class="projectCard">
+                <h2 id="feature-header" class="section-header transition3">FEATURED PROJECTS</h2>
+                <div id="vocabyCard" class="projectCard">
                     <div id="vocaby" class="projectImage transition2"></div>
                     <h1 class="transition" onmouseover="revealImage('vocaby');" onmouseout="removeImage('vocaby')">VOCABY</h1>
                     <p>A Google Chrome Extension</p>
                 </div>
-                <div class="projectCard">
+                <div id="refugeeCard" class="projectCard">
                     <div id="refugee" class="projectImage transition2"></div>
                     <h1 class="transition" onmouseover="revealImage('refugee');" onmouseout="removeImage('refugee')">REFUGEE CRISIS</h1>
                     <p>Web Visualization Application</p>
                 </div>
-                <div class="projectCard">
+                <div id="earthCard" class="projectCard">
                     <div id="earth" class="projectImage transition2"></div>
                     <h1 class="transition" onmouseover="revealImage('earth');" onmouseout="removeImage('earth')">PROJECT EARTH</h1>
                     <p>Interactive Earth Application</p>
                 </div>
             </section>
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     </body>
 </html>
