@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family: Butler_Stencil;
+  src: url(assets/font/Butler_Stencil_Webfont/ButlerStencil.woff);
+  font-weight: normal;
+}
+
+@font-face {
   font-family: Butler;
   src: url(assets/font/Butler_Webfont/Butler-Bold.woff);
 }
@@ -60,18 +66,21 @@ button {
   border-radius: 0px;
   width: 180px;
   height: 50px;
-  margin: 30px 0;
+  margin: 30px 0 0 0;
 }
 
-button span {
+button::after {
+  content: "\2192";
   margin-left: 5px;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 button:hover {
   cursor: pointer;
 }
 
-button:hover span {
+button:hover::after {
   margin-left: 10px;
 }
 
@@ -415,9 +424,166 @@ nav span {
   margin-right: 200px;
 }
 
-@media only screen and (max-width: 1024px) {
+#timelineSection {
+  padding: 100px 0;
+}
+
+#project-timeline {
+  margin-bottom: 100px;
+}
+
+.timeline {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+.tlCard {
+  position: relative;
+  width: 50%;
+  margin: 30px 0;
+}
+
+.tlCard::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  right: -8px;
+  background-color: black;
+  top: 45%;
+  z-index: 1;
+}
+
+.year {
+  text-align: center;
+  padding: 30px;
+  font-size: 7em;
+  font-weight: normal;
+}
+
+.content {
+  width: 70%;
+  padding: 30px 30px;
+  position: relative;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.content h2 {
+  font-size: 0.9em;
+  color: gray;
+  font-weight: 400;
+}
+
+.content p {
+  font-size: 0.9em;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.content a {
+  font-size: 0.9em;
+  opacity: 0.7;
+  display: block;
+  text-align: right;
+}
+
+.content a:hover {
+  opacity: 1;
+}
+
+.content ul li {
+  font-size: 0.9em;
+  padding: 0px 5px;
+  display: inline-block;
+}
+
+.react {
+  color: #61dbfb;
+}
+
+.redux {
+  color: #764abc;
+}
+
+.javascript {
+  color: #F0DB4F;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.right .content {
+  margin-left: auto;
+}
+
+.right::after {
+  left: -7px;
+}
+
+@media all and (max-width: 1024px) {
+  button {
+    width: 240px;
+    height: 80px;
+    font-size: 1em;
+  }
   .container {
-    width: 80vw;
+    width: 90vw;
+  }
+  #introduction {
+    width: 90%;
+  }
+  #introduction h1 {
+    font-size: 7em;
+  }
+  #introduction p {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .timeline::after {
+    left: 0px;
+  }
+  .tlCard {
+    width: 100%;
+  }
+  .content {
+    margin-left: auto;
+  }
+  .year {
+    text-align: left;
+    padding-left: 0;
+    margin: 20px 0 0 0;
+  }
+  .left::after, .right::after {
+    left: -7px;
+  }
+  .right {
+    left: 0%;
   }
 }
 /*# sourceMappingURL=style.css.map */
