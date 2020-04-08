@@ -492,6 +492,8 @@ nav {
     }
 
     #introduction {
+        height: 85vh;
+
         h1 {
             font-size: 7em;
         }
@@ -500,6 +502,10 @@ nav {
             font-size: 1.5em;
             line-height: 2em;
         }
+    }
+
+    header {
+        margin-top: auto;
     }
 }
 

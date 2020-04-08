@@ -598,12 +598,18 @@ nav span {
   .container {
     width: 90vw;
   }
+  #introduction {
+    height: 85vh;
+  }
   #introduction h1 {
     font-size: 7em;
   }
   #introduction p {
     font-size: 1.5em;
     line-height: 2em;
+  }
+  header {
+    margin-top: auto;
   }
 }
 
