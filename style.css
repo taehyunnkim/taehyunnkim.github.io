@@ -4,6 +4,11 @@
   src: url(assets/font/Butler_Stencil_Webfont/ButlerStencil-Bold.woff);
 }
 
+@font-face {
+  font-family: Butler;
+  src: url(assets/font/Butler_Webfont/Butler-Bold.woff);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +29,26 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 4em;
+  font-family: "Butler_Stencil", serif;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.transition {
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.transition2 {
+  -webkit-transition: all 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 button {
   background-color: black;
   color: white;
@@ -35,8 +60,6 @@ button {
 
 button span {
   margin-left: 5px;
-  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 button:hover {
@@ -51,10 +74,13 @@ button:hover span {
   border: 1px solid black;
 }
 
-.homecontainer {
+.container {
   width: 1000px;
-  height: 100vh;
   margin: 0 auto;
+}
+
+#home {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +176,6 @@ nav span {
 }
 
 #introduction h1 {
-  font-family: "Butler_Stencil", serif;
   font-size: 6em;
 }
 
@@ -230,5 +255,87 @@ nav span {
   100% {
     background-position: 0 60px;
   }
+}
+
+#featured {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projectCard {
+  text-align: center;
+  padding: 50px 10px;
+  position: relative;
+  margin: 10px;
+}
+
+.projectCard p {
+  margin-top: -10px;
+  font-size: 14px;
+}
+
+.projectCard .projectImage {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.projectCard h1 {
+  font-family: "Butler", serif;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.projectCard h1:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.section-header {
+  margin: -30px 0 30px 0;
+}
+
+#vocaby {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-image: url("assets/projects/vocaby_logo_large.png");
+  z-index: -100;
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.3));
+}
+
+#refugee {
+  width: 300px;
+  height: 400px;
+  background-image: url("assets/projects/refugees.jpg");
+  z-index: -100;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+#earth {
+  width: 400px;
+  height: 400px;
+  background-image: url("assets/projects/earth-cover.jpg");
+  z-index: -100;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=style.css.map */

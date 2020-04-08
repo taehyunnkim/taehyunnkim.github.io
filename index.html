@@ -4,64 +4,86 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <link rel='icon' href='assets/fav.png' type='image/x-icon'/ >
-
+        <script src="index.js"></script>
         <title>Eric Kim</title>
     </head>
     <body>
-        <div class="homecontainer">
-            <header>
-                <div id="logo"></div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/erickim2000/" target="_blank">
-                                <span class="default"> LINKEDIN </span>
-                                <span class="base"> LINKEDIN </span>
-                                <span class="hover "> LINKEDIN </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/taehyunnkim" target="_blank">
-                                <span class="default"> GITHUB </span>
-                                <span class="base"> GITHUB </span>
-                                <span class="hover "> GITHUB </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="assets/Resume-02.2020.pdf" target="_blank">
-                                <span class="default"> RESUME </span>
-                                <span class="base"> RESUME </span>
-                                <span class="hover "> RESUME </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:kim2000@uw.edu" target="_blank">
-                                <span class="default"> CONTACT </span>
-                                <span class="base"> CONTACT </span>
-                                <span class="hover "> CONTACT </span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <section id="introduction">
-                <div>
-                    <h1>Hi, I'm Eric 👋</h1>
-                    <p>
-                        I’m a <span id="role">full stack developer</span> with passion for web technologies
-                        <br>Based in Seattle, I am currently studying Informatics
-                        <br>at the <span id="school">University of Washington</span>
-                    </p>
-                    <button>ABOUT ME <span>&#10230;</span></button>
-                </div>
-            </section>
-            <section id="bottom">
-                <span>PROJECTS</span>
-                <div class="scroll-indicator"> 
-                    <div class="scroll">
-                        <div class="scroll-line"></div>
+        <div class="container">
+            <div id="home">
+                <header>
+                    <div id="logo"></div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/erickim2000/" target="_blank">
+                                    <span class="default transition"> LINKEDIN </span>
+                                    <span class="base transition"> LINKEDIN </span>
+                                    <span class="hover "> LINKEDIN </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/taehyunnkim" target="_blank">
+                                    <span class="default transition"> GITHUB </span>
+                                    <span class="base transition"> GITHUB </span>
+                                    <span class="hover "> GITHUB </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="assets/Resume-02.2020.pdf" target="_blank">
+                                    <span class="default transition"> RESUME </span>
+                                    <span class="base transition"> RESUME </span>
+                                    <span class="hover "> RESUME </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:kim2000@uw.edu" target="_blank">
+                                    <span class="default transition"> CONTACT </span>
+                                    <span class="base transition"> CONTACT </span>
+                                    <span class="hover "> CONTACT </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <section id="introduction">
+                    <div>
+                        <h1>Hi, I'm Eric 👋</h1>
+                        <p>
+                            I’m a <span id="role">full stack developer</span> with passion for web technologies
+                            <br>Based in Seattle, I am currently studying Informatics
+                            <br>at the <span id="school">University of Washington</span>
+                        </p>
+                        <button>ABOUT ME <span class="transition">&#10230;</span></button>
                     </div>
-                  </div>
+                </section>
+                <section id="bottom">
+                    <span>PROJECTS</span>
+                    <div class="scroll-indicator"> 
+                        <div class="scroll">
+                            <div class="scroll-line"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="container">
+            <section id="featured">
+                <h2 class="section-header">FEATURED PROJECTS</h2>
+                <div class="projectCard">
+                    <div id="vocaby" class="projectImage transition2"></div>
+                    <h1 class="transition" onmouseover="revealImage('vocaby');" onmouseout="removeImage('vocaby')">VOCABY</h1>
+                    <p>A Google Chrome Extension</p>
+                </div>
+                <div class="projectCard">
+                    <div id="refugee" class="projectImage transition2"></div>
+                    <h1 class="transition" onmouseover="revealImage('refugee');" onmouseout="removeImage('refugee')">REFUGEE CRISIS</h1>
+                    <p>Web Visualization Application</p>
+                </div>
+                <div class="projectCard">
+                    <div id="earth" class="projectImage transition2"></div>
+                    <h1 class="transition" onmouseover="revealImage('earth');" onmouseout="removeImage('earth')">PROJECT EARTH</h1>
+                    <p>Interactive Earth Application</p>
+                </div>
             </section>
         </div>
     </body>
