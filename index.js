@@ -1,118 +1,108 @@
-revealImage = (id) => {
+"use strict";
+
+(function() {
+    window.addEventListener('load', init);
+
+    function init() {
+        console.log("loaded");
+
+        const fcard1 = document.getElementById("vocabyCard");
+        const fcard2 = document.getElementById("visionCard");
+        const fcard3 = document.getElementById("earthCard");
+        const indicator = document.getElementById("bottom");
+        const featureHeader = document.getElementById("feature-header");
+        const timelineHeader = document.getElementById("project-timeline");
+    
+        // Quick Implementation -- Fix later
+        const card10 = document.getElementById("card10");
+        const card9 = document.getElementById("card9");
+        const card8 = document.getElementById("card8");
+        const card7 = document.getElementById("card7");
+        const card6 = document.getElementById("card6");
+        const card5 = document.getElementById("card5");
+        const card4 = document.getElementById("card4");
+        const card3 = document.getElementById("card3");
+        const card2 = document.getElementById("card2");
+        const card1 = document.getElementById("card1");
+        const card0 = document.getElementById("card0");
+    
+        window.addEventListener('scroll', () => {
+            console.log(window.pageYOffset);
+        
+            if(window.scrollY > 50) {
+                indicator.style.opacity = 0;
+            }
+        
+            if(window.scrollY < 50) {
+                indicator.style.opacity = 1;
+            }
+        
+            if(window.scrollY > 300 && window.scrollY < 1100) {
+                featureHeader.classList.add('visible');
+            }
+
+            if(window.scrollY > 1100) { 
+                featureHeader.classList.remove('visible');
+            }
+        
+            if(window.scrollY < 300) {
+                featureHeader.classList.remove('visible');
+            }
+        
+            if(window.scrollY > 600) { 
+                fcard1.classList.add('fpVisible');
+            }
+        
+            if(window.scrollY > 700) { 
+                fcard2.classList.add('fpVisible');
+            }
+        
+            if(window.scrollY > 800) { 
+                fcard3.classList.add('fpVisible');
+            }
+    
+            if(window.scrollY > 1100 && window.scrollY < 2000) { 
+                timelineHeader.classList.add('visible');
+            }
+
+            if(window.scrollY > 2000) { 
+                timelineHeader.classList.remove('visible');
+            }
+    
+            if(window.scrollY < 1100) {
+                timelineHeader.classList.remove('visible');
+            }
+    
+            if(window.scrollY > 1500) { 
+                card10.classList.add('visible');
+                card9.classList.add('visible');
+                card8.classList.add('visible');
+            }
+    
+            if(window.scrollY > 2500) { 
+                card7.classList.add('visible');
+                card6.classList.add('visible');
+                card5.classList.add('visible');
+                card4.classList.add('visible');
+            }
+    
+            if(window.scrollY > 3700) { 
+                card3.classList.add('visible');
+                card2.classList.add('visible');
+                card1.classList.add('visible');
+                card0.classList.add('visible');
+            }
+    
+        }, false);
+    }
+})();
+
+function revealImage(id) {
     let img = document.getElementById(id);
     img.style.opacity = 0.5;
 }
 
-removeImage = (id) => {
+function removeImage(id) {
     let img = document.getElementById(id);
     img.style.opacity = 0;
-}
-
-
-// Animation
-
-window.onload = () => {
-    console.log("loaded");
-    const fcard1 = document.getElementById("vocabyCard");
-    const fcard2 = document.getElementById("refugeeCard");
-    const fcard3 = document.getElementById("earthCard");
-    const indicator = document.getElementById("bottom");
-    const featureHeader = document.getElementById("feature-header");
-    const timelineHeader = document.getElementById("project-timeline");
-
-    // Quick Implementation -- Fix later
-    const card10 = document.getElementById("card10");
-    const card9 = document.getElementById("card9");
-    const card8 = document.getElementById("card8");
-    const card7 = document.getElementById("card7");
-    const card6 = document.getElementById("card6");
-    const card5 = document.getElementById("card5");
-    const card4 = document.getElementById("card4");
-    const card3 = document.getElementById("card3");
-    const card2 = document.getElementById("card2");
-    const card1 = document.getElementById("card1");
-
-    window.addEventListener('scroll', () => {
-        console.log(window.pageYOffset);
-    
-        if(window.scrollY > 50) {
-            indicator.style.opacity = 0;
-        }
-    
-        if(window.scrollY < 50) {
-            indicator.style.opacity = 1;
-        }
-    
-        if(window.scrollY > 300) {
-            featureHeader.style.opacity = 1;
-        }
-    
-        if(window.scrollY < 300) {
-            featureHeader.style.opacity = 0;
-        }
-    
-        if(window.scrollY > 600) { 
-            fcard1.style.opacity = 1;
-            fcard1.style.margin = 0;
-        }
-    
-        if(window.scrollY > 700) { 
-            fcard2.style.opacity = 1;
-            fcard2.style.margin = 0;
-        }
-    
-        if(window.scrollY > 800) { 
-            fcard3.style.opacity = 1;
-            fcard3.style.margin = 0;
-        }
-
-        if(window.scrollY > 1100) { 
-            timelineHeader.style.opacity = 1;
-        }
-
-        if(window.scrollY < 1100) {
-            timelineHeader.style.opacity = 0;
-        }
-
-        if(window.scrollY > 1500) { 
-            card10.style.opacity = 1;
-        }
-
-        if(window.scrollY > 1700) { 
-            card9.style.opacity = 1;
-        }
-
-        if(window.scrollY > 2300) { 
-            card8.style.opacity = 1;
-        }
-
-        if(window.scrollY > 2500) { 
-            card7.style.opacity = 1;
-        }
-
-        if(window.scrollY > 2700) { 
-            card6.style.opacity = 1;
-        }
-
-        if(window.scrollY > 2900) { 
-            card5.style.opacity = 1;
-        }
-
-        if(window.scrollY > 3500) { 
-            card4.style.opacity = 1;
-        }
-
-        if(window.scrollY > 3700) { 
-            card3.style.opacity = 1;
-        }
-
-        if(window.scrollY > 3900) { 
-            card2.style.opacity = 1;
-        }
-
-        if(window.scrollY > 4100) { 
-            card1.style.opacity = 1;
-        }
-
-    }, false);
 }
