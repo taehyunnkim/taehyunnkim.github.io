@@ -73,13 +73,13 @@
                 timelineHeader.classList.remove('visible');
             }
     
-            if(window.scrollY > 1500) { 
+            if(window.scrollY > 1300) { 
                 card10.classList.add('visible');
                 card9.classList.add('visible');
                 card8.classList.add('visible');
             }
     
-            if(window.scrollY > 2500) { 
+            if(window.scrollY > 2200) { 
                 card7.classList.add('visible');
                 card6.classList.add('visible');
                 card5.classList.add('visible');

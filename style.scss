@@ -760,6 +760,19 @@ nav {
     }
 }
 
+@media (max-width: 390px) {
+    #introduction {
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1em;
+        }
+
+        p {
+            font-size: 0.65rem;
+        }
+    }
+}
+
 @keyframes scrolldown {
     0% {
         background-position: 0 $line-height-abs;

@@ -791,6 +791,16 @@ nav span {
   }
 }
 
+@media (max-width: 390px) {
+  #introduction h1 {
+    font-size: 3.5rem;
+    line-height: 1em;
+  }
+  #introduction p {
+    font-size: 0.65rem;
+  }
+}
+
 @-webkit-keyframes scrolldown {
   0% {
     background-position: 0 -60px;
