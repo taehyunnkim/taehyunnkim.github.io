@@ -310,8 +310,9 @@ nav {
 
     ul li {
         font-size: 0.9em;
-        padding: 0px 5px;
+        padding: 5px 10px;
         display: inline-block;
+        font-weight: 600;
     }
 }
 
@@ -435,7 +436,7 @@ nav {
 
 #hand {
     display: inline-block;
-    animation: wave 10s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+    animation: wave 3s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
 }
 
 #featured {
@@ -793,16 +794,16 @@ nav {
     50% {
         transform: rotate(0);
     }
-    51% {
+    52% {
         transform: rotate(-10deg);
     }
-    52% {
+    54% {
         transform: rotate(0deg);
     }
-    53% {
+    56% {
         transform: rotate(10deg);
     }
-    54% {
+    58% {
         transform: rotate(0deg);
     }
 }

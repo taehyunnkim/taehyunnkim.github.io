@@ -330,8 +330,9 @@ nav span {
 
 .content ul li {
   font-size: 0.9em;
-  padding: 0px 5px;
+  padding: 5px 10px;
   display: inline-block;
+  font-weight: 600;
 }
 
 .react {
@@ -468,8 +469,8 @@ nav span {
 
 #hand {
   display: inline-block;
-  -webkit-animation: wave 10s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
-          animation: wave 10s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+  -webkit-animation: wave 3s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+          animation: wave 3s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
 }
 
 #featured {
@@ -834,19 +835,19 @@ nav span {
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
-  51% {
+  52% {
     -webkit-transform: rotate(-10deg);
             transform: rotate(-10deg);
   }
-  52% {
+  54% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  53% {
+  56% {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
   }
-  54% {
+  58% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
@@ -857,19 +858,19 @@ nav span {
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
-  51% {
+  52% {
     -webkit-transform: rotate(-10deg);
             transform: rotate(-10deg);
   }
-  52% {
+  54% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  53% {
+  56% {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
   }
-  54% {
+  58% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
