@@ -85,14 +85,6 @@
                 card5.classList.add('visible');
                 card4.classList.add('visible');
             }
-    
-            if(window.scrollY > 3700) { 
-                card3.classList.add('visible');
-                card2.classList.add('visible');
-                card1.classList.add('visible');
-                card0.classList.add('visible');
-            }
-    
         }, false);
     }
 })();

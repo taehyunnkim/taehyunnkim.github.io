@@ -271,6 +271,22 @@ nav {
     font-weight: normal;
 }
 
+.archive {
+    text-align: center;
+    padding: 50px;
+}
+
+.archive a {
+    font-family: Butler;
+    font-size: 4rem;
+    border-bottom: 1px solid black;
+    opacity: 0.7;
+}
+
+.archive a:hover {
+    opacity: 1;
+}
+
 .content {
     width: 70%;
     padding: 30px 30px;
@@ -608,6 +624,11 @@ nav {
     .year {
         font-size: 4rem;
     }
+
+    .archive a {
+        font-family: Butler;
+        font-size: 2.5rem;
+    }    
 
     .introspacing {
         display: block;
