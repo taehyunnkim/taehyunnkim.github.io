@@ -114,6 +114,13 @@ nav span {
 .container {
   width: 60vw;
   margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.tlcontainer {
+  width: 60vw;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .transition {
@@ -581,41 +588,191 @@ nav span {
           flex: 1;
 }
 
-@media all and (max-width: 1024px) {
-  #home {
-    height: -webkit-fill-available;
-    height: -moz-available;
-    height: fill-available;
-  }
-  button {
-    width: 240px;
-    height: 80px;
-    font-size: 1em;
-  }
+@media (max-width: 1024px) {
   .container {
-    width: 90vw;
+    width: 80vw;
   }
   #introduction {
     height: 85vh;
   }
+  header {
+    margin-top: auto;
+    height: 20%;
+  }
+  .overflow {
+    overflow-x: visible;
+  }
+  .content {
+    width: 80%;
+    padding: 20px 20px;
+  }
+  .content > div h2 {
+    display: inline;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  .content > div h2:last-child {
+    color: gray;
+    float: right;
+    font-weight: 400;
+  }
+  .content p {
+    font-size: 0.7em;
+    font-weight: 300;
+    padding: 10px;
+  }
+  .content a {
+    font-size: 0.7em;
+    opacity: 0.7;
+    display: block;
+    text-align: right;
+    margin: 5px;
+  }
+  .content a:hover {
+    opacity: 1;
+  }
+  .content ul li {
+    font-size: 0.7em;
+    padding: 0px 5px;
+    display: inline-block;
+  }
+  .tlCard {
+    margin: 20px 0;
+    width: 50%;
+  }
+  .tlCard::after {
+    width: 14px;
+    height: 14px;
+    top: 45%;
+  }
+  .section-header {
+    font-size: 0.9rem;
+    margin: -30px 0 30px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #home {
+    padding: 10px 30px 0 30px;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: fill-available;
+  }
+  .container {
+    width: 100vw;
+  }
+  .year {
+    font-size: 4rem;
+  }
+  .introspacing {
+    display: block;
+  }
+  #introduction {
+    height: 80vh;
+    width: 100%;
+    padding: 0;
+  }
   #introduction h1 {
-    font-size: 7em;
+    font-size: 4rem;
+    line-height: 1em;
   }
   #introduction p {
-    font-size: 1.5em;
-    line-height: 2em;
+    font-size: 0.8rem;
+  }
+  #introduction div {
+    padding: 0;
   }
   header {
     margin-top: auto;
   }
-}
-
-@media all and (max-width: 600px) {
-  .timeline::after {
-    left: 0px;
+  #logo {
+    width: 40px;
+    height: 40px;
+  }
+  nav li {
+    padding-left: 5px;
+  }
+  nav li a {
+    font-size: 0.8rem;
+  }
+  .scroll-indicator p {
+    font-size: 0.8rem;
+  }
+  .scroll-indicator .scroll {
+    width: 1px;
+    height: 30px;
+  }
+  .scroll-indicator .scroll .scroll-line {
+    background-position: 0 -30px;
+    -webkit-animation: scrolldown 4s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+            animation: scrolldown 4s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+  }
+  .section-header {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: -30px 0 30px 0;
+  }
+  #timelineSection {
+    padding-left: 10px;
+  }
+  .projectCard {
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: opacity 3s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: opacity 3s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 3s cubic-bezier(0.23, 1, 0.32, 1), opacity 3s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 3s cubic-bezier(0.23, 1, 0.32, 1), opacity 3s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+    margin: 50px;
+  }
+  .projectCard h1 {
+    font-size: 3rem;
+  }
+  .content {
+    width: 80%;
+    padding: 20px 20px;
+  }
+  .content > div h2 {
+    display: inline;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  .content > div h2:last-child {
+    color: gray;
+    float: right;
+    font-weight: 400;
+  }
+  .content p {
+    font-size: 0.7em;
+    font-weight: 300;
+    padding: 10px;
+  }
+  .content a {
+    font-size: 0.7em;
+    opacity: 0.7;
+    display: block;
+    text-align: right;
+    margin: 5px;
+  }
+  .content a:hover {
+    opacity: 1;
+  }
+  .content ul li {
+    font-size: 0.7em;
+    padding: 0px 5px;
+    display: inline-block;
   }
   .tlCard {
-    width: 100%;
+    margin: 20px 0;
+    width: 95%;
+  }
+  .tlCard::after {
+    width: 10px;
+    height: 10px;
+    top: 45%;
+  }
+  .timeline::after {
+    left: 0px;
   }
   .content {
     margin-left: auto;
@@ -627,7 +784,7 @@ nav span {
   }
   .left::after,
   .right::after {
-    left: -7px;
+    left: -5px;
   }
   .right {
     left: 0%;

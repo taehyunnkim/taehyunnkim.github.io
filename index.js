@@ -49,19 +49,19 @@
                 featureHeader.classList.remove('visible');
             }
         
-            if(window.scrollY > 600) { 
+            if(window.scrollY > 500) { 
                 fcard1.classList.add('fpVisible');
             }
         
-            if(window.scrollY > 700) { 
+            if(window.scrollY > 600) { 
                 fcard2.classList.add('fpVisible');
             }
         
-            if(window.scrollY > 800) { 
+            if(window.scrollY > 700) { 
                 fcard3.classList.add('fpVisible');
             }
     
-            if(window.scrollY > 1100 && window.scrollY < 2000) { 
+            if(window.scrollY > 900 && window.scrollY < 2000) { 
                 timelineHeader.classList.add('visible');
             }
 
@@ -69,7 +69,7 @@
                 timelineHeader.classList.remove('visible');
             }
     
-            if(window.scrollY < 1100) {
+            if(window.scrollY < 850) {
                 timelineHeader.classList.remove('visible');
             }
     
