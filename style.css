@@ -123,6 +123,10 @@ nav span {
   overflow-x: hidden;
 }
 
+.overflow {
+  overflow-x: visible;
+}
+
 .transition {
   -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
