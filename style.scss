@@ -102,6 +102,16 @@ nav {
     }
 }
 
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.6rem;
+    color: gray;
+    margin-bottom: 20px;
+}
+
 .border {
     border: 1px solid black;
 }
@@ -269,22 +279,6 @@ nav {
     padding: 30px;
     font-size: 7em;
     font-weight: normal;
-}
-
-.archive {
-    text-align: center;
-    padding: 50px;
-}
-
-.archive a {
-    font-family: Butler;
-    font-size: 4rem;
-    border-bottom: 1px solid black;
-    opacity: 0.7;
-}
-
-.archive a:hover {
-    opacity: 1;
 }
 
 .content {
@@ -508,17 +502,9 @@ nav {
     opacity: 0;
 }
 
-@for $i from 1 through 10 {
-    @if $i%2 == 0 {
-        #card#{$i} {
-            opacity: 0;
-        }
-    } @else {
-        #card#{$i} {
-            opacity: 0;
-        }
-    }
-}
+#twenty > div, #nineteen > div {
+    opacity: 0;
+} 
 
 #timeline-collapsed {
     display: flex;
@@ -623,12 +609,7 @@ nav {
 
     .year {
         font-size: 4rem;
-    }
-
-    .archive a {
-        font-family: Butler;
-        font-size: 2.5rem;
-    }    
+    } 
 
     .introspacing {
         display: block;

@@ -4,31 +4,20 @@
     window.addEventListener('load', init);
 
     function init() {
-        console.log("loaded");
+        console.log('loaded');
 
-        const fcard1 = document.getElementById("vocabyCard");
-        const fcard2 = document.getElementById("visionCard");
-        const fcard3 = document.getElementById("earthCard");
-        const indicator = document.getElementById("bottom");
-        const featureHeader = document.getElementById("feature-header");
-        const timelineHeader = document.getElementById("project-timeline");
-    
-        // Quick Implementation -- Fix later
-        const card10 = document.getElementById("card10");
-        const card9 = document.getElementById("card9");
-        const card8 = document.getElementById("card8");
-        const card7 = document.getElementById("card7");
-        const card6 = document.getElementById("card6");
-        const card5 = document.getElementById("card5");
-        const card4 = document.getElementById("card4");
-        const card3 = document.getElementById("card3");
-        const card2 = document.getElementById("card2");
-        const card1 = document.getElementById("card1");
-        const card0 = document.getElementById("card0");
+        const fcard1 = document.getElementById('vocabyCard');
+        const fcard2 = document.getElementById('visionCard');
+        const fcard3 = document.getElementById('earthCard');
+        const indicator = document.getElementById('bottom');
+        const featureHeader = document.getElementById('feature-header');
+        const timelineHeader = document.getElementById('project-timeline');
+
+        const projects19 = document.querySelectorAll('#nineteen > div');
+        const projects20 = document.querySelectorAll('#twenty > div');
     
         window.addEventListener('scroll', () => {
-            console.log(window.pageYOffset);
-        
+            console.log(window.scrollY);
             if(window.scrollY > 50) {
                 indicator.style.opacity = 0;
             }
@@ -73,21 +62,22 @@
                 timelineHeader.classList.remove('visible');
             }
     
-            if(window.scrollY > 1300) { 
-                card10.classList.add('visible');
-                card9.classList.add('visible');
-                card8.classList.add('visible');
+            if(!projects20[0].classList.contains('visible') && window.scrollY > 1300) { 
+                makeVisible(projects20);
             }
     
-            if(window.scrollY > 2200) { 
-                card7.classList.add('visible');
-                card6.classList.add('visible');
-                card5.classList.add('visible');
-                card4.classList.add('visible');
+            if(!projects19[0].classList.contains('visible') && window.scrollY > 2600) { 
+                makeVisible(projects19);
             }
         }, false);
     }
 })();
+
+function makeVisible(arr) {
+    arr.forEach(element => {
+        element.classList.add('visible');
+    });
+}
 
 function revealImage(id) {
     let img = document.getElementById(id);

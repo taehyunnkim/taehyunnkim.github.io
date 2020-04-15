@@ -107,6 +107,16 @@ nav span {
   display: block;
 }
 
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.6rem;
+  color: gray;
+  margin-bottom: 20px;
+}
+
 .border {
   border: 1px solid black;
 }
@@ -289,22 +299,6 @@ nav span {
   padding: 30px;
   font-size: 7em;
   font-weight: normal;
-}
-
-.archive {
-  text-align: center;
-  padding: 50px;
-}
-
-.archive a {
-  font-family: Butler;
-  font-size: 4rem;
-  border-bottom: 1px solid black;
-  opacity: 0.7;
-}
-
-.archive a:hover {
-  opacity: 1;
 }
 
 .content {
@@ -554,43 +548,7 @@ nav span {
   opacity: 0;
 }
 
-#card1 {
-  opacity: 0;
-}
-
-#card2 {
-  opacity: 0;
-}
-
-#card3 {
-  opacity: 0;
-}
-
-#card4 {
-  opacity: 0;
-}
-
-#card5 {
-  opacity: 0;
-}
-
-#card6 {
-  opacity: 0;
-}
-
-#card7 {
-  opacity: 0;
-}
-
-#card8 {
-  opacity: 0;
-}
-
-#card9 {
-  opacity: 0;
-}
-
-#card10 {
+#twenty > div, #nineteen > div {
   opacity: 0;
 }
 
@@ -684,10 +642,6 @@ nav span {
   }
   .year {
     font-size: 4rem;
-  }
-  .archive a {
-    font-family: Butler;
-    font-size: 2.5rem;
   }
   .introspacing {
     display: block;
