@@ -567,9 +567,16 @@ footer p {
           flex: 1;
 }
 
+@media (max-width: 1364px) {
+  .container {
+    width: 70vw;
+  }
+}
+
 @media (max-width: 1024px) {
   .container {
     width: 80vw;
+    overflow-y: hidden;
   }
   #introduction {
     height: 85vh;
