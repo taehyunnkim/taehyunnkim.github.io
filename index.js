@@ -8,8 +8,7 @@
 
         const fcard1 = document.getElementById('vocabyCard');
         const fcard2 = document.getElementById('uwlCard');
-        const fcard3 = document.getElementById('earthCard');
-        const fcard4 = document.getElementById('visionCard');
+        const fcard3 = document.getElementById('visionCard');
         const indicator = document.getElementById('bottom');
         const featureHeader = document.getElementById('feature-header');
         const timelineHeader = document.getElementById('project-timeline');
@@ -48,10 +47,6 @@
         
             if(window.scrollY > 700) { 
                 fcard3.classList.add('fpVisible');
-            }
-
-            if(window.scrollY > 800) { 
-                fcard4.classList.add('fpVisible');
             }
     
             if(window.scrollY > 900 && window.scrollY < 2000) { 
