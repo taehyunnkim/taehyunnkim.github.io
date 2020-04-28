@@ -332,6 +332,7 @@ footer p {
   opacity: 0.7;
   display: block;
   text-align: right;
+  margin-top: 10px;
 }
 
 .content a:hover {
