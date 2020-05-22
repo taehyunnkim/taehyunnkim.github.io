@@ -45,9 +45,9 @@
                 fcard2.classList.add('fpVisible');
             }
         
-            if(window.scrollY > 700) { 
-                fcard3.classList.add('fpVisible');
-            }
+            // if(window.scrollY > 700) { 
+            //     fcard3.classList.add('fpVisible');
+            // }
     
             if(window.scrollY > 900 && window.scrollY < 2000) { 
                 timelineHeader.classList.add('visible');
