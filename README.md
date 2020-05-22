@@ -1,3 +1,3 @@
-# Brand New Portfolio In Development
+# Portfolio In Development
 
 https://erickim.dev/
